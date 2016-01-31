@@ -4,11 +4,11 @@ FlowRouter.route('/', {
     }
 });
 
-// FlowRouter.route('/login', {
-//     action() {
-//         ReactLayout.render(App, { anonContent: <Login /> });
-//     }
-// });
+FlowRouter.route('/create-listing', {
+    action() {
+        ReactLayout.render(App, { content: <CreateListing /> });
+    }
+});
 
 FlowRouter.route('/listings', {
     action() {
