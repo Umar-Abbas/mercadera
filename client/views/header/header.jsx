@@ -52,7 +52,7 @@ Header = React.createClass({
               </div>
 
               <div className="header-right">
-                <a href="#" className="nav-btn facebook-btn"><i className="fa fa-facebook"></i> Ingresa con Facebook</a>
+                <a href="#" className="nav-btn" data-toggle="modal" data-target="#loginModal">Ingresa / Registrate</a>
 
                 <a href="#" className="icon-btn text-center"><i className="material-icons">notifications_none</i></a>
 
