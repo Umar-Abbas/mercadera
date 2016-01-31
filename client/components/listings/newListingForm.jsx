@@ -10,7 +10,13 @@ NewListingForm = React.createClass({
 
         <TextInput name={"name"} label={"Nombre:"} placeholder={"Escribe un nombre para tu anuncio. Corto y sencillo!"} errors={["can't be empty.", "too long"]} onChange={this.handleChange} />
 
+        <SelectInput name={"category"} label={"Categoria:"} errors={[]} onChange={this.handleChange} />
+
         <TextAreaInput name={"description"} label={"Descripción:"} rows={"3"} errors={[]} onChange={this.handleChange} />
+
+        <SelectInput name={"city"} label={"Ciudad:"} errors={[]} onChange={this.handleChange} />
+
+        <AmountInput name={"price"} label={"Precio:"} placeholder={"0"} errors={[]} onChange={this.handleChange} />
 
         <h1>These below are just static HTML, need to move to component.</h1>
 
@@ -56,7 +62,11 @@ NewListingForm = React.createClass({
         <div className="form-group">
           <label for="inputPassword3" className="col-sm-2 control-label">Precio</label>
           <div className="col-sm-10">
-            <input type="text" className="form-control" placeholder="$0.00" />
+            <div className="input-group">
+              <span className="input-group-addon">$</span>
+              <input type="text" className="form-control" aria-label="Amount (to the nearest dollar)" />
+              <span className="input-group-addon">.00</span>
+            </div>
           </div>
         </div>
 
