@@ -22,3 +22,34 @@ Visit our StackShare profile to see our Tech Stack.
 [http://stackshare.io/sergiotapia/mercadera](http://stackshare.io/sergiotapia/mercadera)
 
 ![StackShare Tech Stack](http://i.imgur.com/b02cbpO.png)
+
+## Project Setup
+
+Want to the run the project locally? Great!
+
+1. Clone the project locally.
+
+  ```
+  git clone git@github.com:danieltapia/mercadera.git
+  cd mercadera
+  ```
+
+2. Create a settings.json file in your server folder. You will need to create social apps for Twitter and Facebook.
+
+  ```
+  touch server/settings.json
+  {
+    "facebookAppId": "",
+    "facebookAppSecret": "",
+    "twitterApiKey": "",
+    "twitterApiSecret": ""
+  }
+  ```
+
+3. Run the project.
+
+  ```
+  meteor run --settings server/settings.json
+  ```
+
+If you're having trouble running the project, please open an issue. We want the project to be easy to run for newcomers.
