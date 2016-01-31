@@ -6,13 +6,6 @@ LoginModal = React.createClass({
       self.hideLoginModal();
     });
   },
-  loginWithGoogle: function() {
-    var self = this;
-    Meteor.loginWithGoogle({}, function(err) {
-      if (err) { throw new Meteor.Error("Google login failed"); }
-      self.hideLoginModal();
-    });
-  },
   loginWithTwitter: function() {
     var self = this;
     Meteor.loginWithTwitter({}, function(err) {
@@ -25,7 +18,7 @@ LoginModal = React.createClass({
   },
   render: function() {
     return (
-      <div className="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+      <div className="modal fade" ref='loginModal' id="loginModal" tabIndex="-1" role="dialog" aria-labelledby="loginModal">
         <div className="modal-dialog modal-sm">
           <div className="modal-content">
 
@@ -37,7 +30,6 @@ LoginModal = React.createClass({
               <ul className="list-unstyled">
                 <li><a href="#" onClick={this.loginWithFacebook} className="btn btn-block btn-facebook">Ingresa con Facebook</a></li>
                 <li><a href="#" onClick={this.loginWithTwitter} className="btn btn-block btn-twitter">Ingresa con Twitter</a></li>
-                <li><a href="#" onClick={this.loginWithGoogle} className="btn btn-block btn-gplus">Ingresa con Google+</a></li>
               </ul>
             </div>
           </div>
