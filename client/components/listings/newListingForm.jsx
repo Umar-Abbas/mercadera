@@ -10,6 +10,8 @@ NewListingForm = React.createClass({
 
         <TextInput name={"name"} label={"Nombre:"} placeholder={"Escribe un nombre para tu anuncio. Corto y sencillo!"} errors={["can't be empty.", "too long"]} onChange={this.handleChange} />
 
+        <TextAreaInput name={"description"} label={"Descripción:"} rows={"3"} errors={[]} onChange={this.handleChange} />
+
         <h1>These below are just static HTML, need to move to component.</h1>
 
         <div className="form-group">
@@ -40,12 +42,7 @@ NewListingForm = React.createClass({
           </div>
         </div>
 
-        <div className="form-group">
-          <label for="inputPassword3" className="col-sm-2 control-label">Descripción</label>
-          <div className="col-sm-10">
-            <textarea rows="3" className="form-control"></textarea>
-          </div>
-        </div>
+        <TextAreaInput name={"description"} label={"Descripción:"} rows={"3"} errors={[]} onChange={this.handleChange} />
 
         <div className="form-group">
           <label for="inputPassword3" className="col-sm-2 control-label">Ubicación</label>
