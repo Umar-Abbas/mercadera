@@ -30,7 +30,7 @@ Header = React.createClass({
             <div className="header-inner">
               <div className="header-left">
                 <a href="/" className="nav-btn brand">Mercadera</a>
-                
+
                 <div className="dropdown">
                   <a className="icon-btn browse-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                     <i className="material-icons">menu</i>
@@ -52,22 +52,9 @@ Header = React.createClass({
               </div>
 
               <div className="header-right">
-                <a href="#" className="nav-btn" data-toggle="modal" data-target="#loginModal">Ingresa / Registrate</a>
-
                 <a href="#" className="icon-btn text-center"><i className="material-icons">notifications_none</i></a>
 
-                <div className="dropdown">
-                  <a className="nav-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Username <span className="caret"></span>
-                  </a>
-                  <ul className="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" className="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </div>
+                <UserHeaderArea />
               </div>
             </div>
           </div>
