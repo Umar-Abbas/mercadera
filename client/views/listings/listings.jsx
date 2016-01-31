@@ -55,7 +55,7 @@ Listings = React.createClass({
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row main-adspace">
                 <div className="col-md-6">
                   <div className="snowflake-box">
                     <img src="http://placehold.it/250x250" alt="" className="img-responsive"/>
