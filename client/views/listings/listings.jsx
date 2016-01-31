@@ -53,7 +53,20 @@ Listings = React.createClass({
                     <div className="col-xs-6"><a href="#" className="btn btn-block btn-default"><i className="material-icons md-18">share</i> Compartir</a></div>
                   </div>
                 </div>
+              </div>
 
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="snowflake-box">
+                    <img src="http://placehold.it/250x250" alt="" className="img-responsive"/>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div className="snowflake-box">
+                    <img src="http://placehold.it/250x250" alt="" className="img-responsive"/>
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -101,7 +114,7 @@ Listings = React.createClass({
                 <div className="box-heading text-center text-uppercase">Información útil</div>
                 
                 <div className="box-padding">
-                  <ul className="list-unstyled">
+                  <ul>
                     <li>Evite estafas al actuar localmente o pagando con PayPal.</li>
                     <li>Nunca pagues con Western Union, Moneygram u otros servicios de pago anónimos.</li>
                     <li>No comprar o vender fuera de su país. No aceptes cheques de fuera de tu país.</li>

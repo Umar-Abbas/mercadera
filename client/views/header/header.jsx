@@ -29,7 +29,7 @@ Header = React.createClass({
           <div id="header">
             <div className="header-inner">
               <div className="header-left">
-                <a href="/" className="nav-btn brand">M</a>
+                <a href="/" className="nav-btn brand">Mercadera</a>
                 
                 <div className="dropdown">
                   <a className="icon-btn browse-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -52,7 +52,7 @@ Header = React.createClass({
               </div>
 
               <div className="header-right">
-                <a href="#" className="icon-btn text-center"><i className="material-icons">notifications</i></a>
+                <a href="#" className="icon-btn text-center"><i className="material-icons">notifications_none</i></a>
 
                 <div className="dropdown">
                   <a className="nav-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
