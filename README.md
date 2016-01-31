@@ -37,7 +37,10 @@ Want to the run the project locally? Great!
 2. Create a settings.json file in your server folder. You will need to create social apps for Twitter and Facebook.
 
   ```
-  touch server/settings.json
+  $ touch server/settings.json
+
+  // Then paste this in the file:
+  
   {
     "facebookAppId": "",
     "facebookAppSecret": "",
