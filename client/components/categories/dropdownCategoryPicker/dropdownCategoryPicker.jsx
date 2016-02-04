@@ -21,7 +21,7 @@ DropdownCategoryPicker = React.createClass({
 
   render() {
     return (
-      <div className="dropdown">
+      <div className="dropdown category-picker">
         <a className="icon-btn browse-btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           <i className="material-icons">menu</i>
         </a>
