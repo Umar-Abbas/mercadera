@@ -29,7 +29,7 @@ Home = React.createClass({
                 </div>
 
                 <div className="col-lg-5ths col-md-3 col-sm-4 col-xs-6">
-                  <ListingCard price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} seller={"Daniel T."} />
+                  <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/32/32"} sellerName={"Daniel T."} />
                 </div>
 
                 <div className="col-lg-5ths col-md-3 col-sm-4 col-xs-6">

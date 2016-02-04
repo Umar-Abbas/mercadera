@@ -3,7 +3,7 @@ ListingCard = React.createClass({
     return (
       <div className="card">
         <div className="card-thumbnail">
-          <img src="http://placehold.it/300x300" alt="" className="img-responsive"/>
+          <img src={this.props.cardThumbnail} alt="" className="img-responsive"/>
         </div>
         <h5 className="card-price no-margin text-center">{this.props.price}</h5>
         <div className="card-content">
@@ -14,11 +14,11 @@ ListingCard = React.createClass({
           <div className="media">
             <div className="media-left">
               <a href="#">
-                <img className="media-object img-circle" src="http://lorempixel.com/32/32" alt="..." />
+                <img className="media-object img-circle" src={this.props.sellerAvatar} alt="..." />
               </a>
             </div>
             <div className="media-body">
-              <div className="username">{this.props.seller}</div>
+              <div className="username">{this.props.sellerName}</div>
               <div className="timestamp subtle-text">hace 2 minutos</div>
             </div>
           </div>
