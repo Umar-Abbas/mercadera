@@ -13,7 +13,7 @@ DropdownCategoryPicker = React.createClass({
     return (
       this.data.categories.map(function(category) {
         return (
-          <li key={category.slug}><a href={'/' + category.slug}>{category.name}</a></li>
+          <li key={category.slug}><a href={'/anuncios/' + category.slug}>{category.name}</a></li>
         )
       })
     )
@@ -28,7 +28,7 @@ DropdownCategoryPicker = React.createClass({
         <ul className="dropdown-menu">
           {this.data.categories ? this.renderCategories() : null}
           <li role="separator" className="divider"></li>
-          <li><a href="#">Crear Anuncio</a></li>
+          <li><a href="/nuevo-anuncio">Crear Anuncio</a></li>
         </ul>
       </div>
     )

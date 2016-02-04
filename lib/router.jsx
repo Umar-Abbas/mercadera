@@ -4,13 +4,13 @@ FlowRouter.route('/', {
     }
 });
 
-FlowRouter.route('/create-listing', {
+FlowRouter.route('/nuevo-anuncio', {
     action() {
         ReactLayout.render(App, { content: <CreateListing /> });
     }
 });
 
-FlowRouter.route('/listings', {
+FlowRouter.route('/anuncios/:automoviles', {
     action() {
         ReactLayout.render(App, { content: <Listings /> });
     }
