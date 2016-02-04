@@ -40,7 +40,7 @@ Want to the run the project locally? Great!
   $ touch server/settings.json
 
   // Then paste this in the file:
-  
+
   {
     "facebookAppId": "",
     "facebookAppSecret": "",
@@ -48,8 +48,14 @@ Want to the run the project locally? Great!
     "twitterApiSecret": ""
   }
   ```
+3. Add data you want to seeds.js and run the seeds method to initially populate the database.
 
-3. Run the project.
+  ```
+  $ meteor shell
+  > Meteor.call("Database.seed")
+  ```
+
+4. Run the project.
 
   ```
   meteor run --settings server/settings.json
