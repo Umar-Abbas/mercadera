@@ -5,19 +5,9 @@ Home = React.createClass({
     return (
       <div>
         <div className="container">
-          <div className="box">
-            <div className="box-content">Hi</div>
-          </div>
           <div className="row">
             <div className="visible-lg col-lg-2">
-              <div className="box category-sidebar">
-                <h4 className="no-margin"><i className="material-icons md-18">dashboard</i> Categorias</h4>
-                <ul className="list-unstyled">
-                  <li><a href="#">Autos y Vehículos</a></li>
-                  <li><a href="#">Bienes Raices</a></li>
-                  <li><a href="#">Materiales de Construcción</a></li>
-                </ul>
-              </div>
+              <SidebarCategoryPicker />
             </div>
 
             <div className="col-md-12 col-lg-10">
