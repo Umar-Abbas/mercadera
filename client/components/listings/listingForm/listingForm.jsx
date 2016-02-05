@@ -1,4 +1,4 @@
-NewListingForm = React.createClass({
+ListingForm = React.createClass({
   handleChange(e) {
     console.log("Changed input");
   },
