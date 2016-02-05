@@ -23,6 +23,7 @@ FeaturedListings = React.createClass({
             <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$250"} name={"PS4 500GB Nuevo"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/32/32"} sellerName={"Daniel T."} />
           </div>
         </div>
+        <hr className="home-separator"/>
       </div>
     );
   }

@@ -12,13 +12,7 @@ Home = React.createClass({
 
             <div className="col-md-12 col-lg-10">
               <FeaturedListings categoryName={"Autos y Vehiculos"} />
-
-              <hr className="home-separator"/>
-
               <FeaturedListings categoryName={"Bienes Raices"}  />
-
-              <hr className="home-separator"/>
-
               <FeaturedListings categoryName={"Celulares y Accesorios"} />
             </div>
           </div>
