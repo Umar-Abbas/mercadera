@@ -40,7 +40,46 @@ Header = React.createClass({
               </div>
 
               <div className="header-right">
-                <a href="#" className="icon-btn text-center"><i className="material-icons">notifications_none</i></a>
+                <div className="dropdown">
+                  <a className="icon-btn text-center dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i className="material-icons">notifications_none</i>
+                  </a>
+                  <ul className="dropdown-menu dropdown-menu-right notifications-menu">
+                    <div className="dropdown-heading">Notificaciónes</div>
+                    <div className="media">
+                      <div className="media-left">
+                        <a href="#">
+                          <img className="media-object img-circle" src="http://lorempixel.com/30/30" alt="..." />
+                        </a>
+                      </div>
+                      <div className="media-body">
+                        <div><strong>Daniel T.</strong> comento en tu anuncio: "PS4 500GB Blanco".</div>
+                      </div>
+                    </div>
+
+                    <div className="media">
+                      <div className="media-left">
+                        <a href="#">
+                          <img className="media-object img-circle" src="http://lorempixel.com/30/30" alt="..." />
+                        </a>
+                      </div>
+                      <div className="media-body">
+                        <div><strong>Marco S.</strong> comento en tu anuncio: "Air Jordans 10 OVO".</div>
+                      </div>
+                    </div>
+
+                    <div className="media">
+                      <div className="media-left">
+                        <a href="#">
+                          <img className="media-object img-circle" src="http://lorempixel.com/30/30" alt="..." />
+                        </a>
+                      </div>
+                      <div className="media-body">
+                        <div><strong>Daniel T.</strong> commento en tu anuncio: "PS4 500GB Blanco".</div>
+                      </div>
+                    </div>
+                  </ul>
+                </div>
 
                 <UserHeaderArea />
               </div>
