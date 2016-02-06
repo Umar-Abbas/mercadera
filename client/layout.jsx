@@ -6,7 +6,10 @@ Layout = React.createClass({
         <Header />
 
         {this.props.content}
-
+        
+        <FooterMessage />
+        <Footer />
+        
         <LoginModal />
       </div>
     );
