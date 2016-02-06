@@ -18,7 +18,7 @@ FlowRouter.route('/anuncios/:automoviles', {
 
 FlowRouter.route('/category', {
     action() {
-        ReactLayout.render(App, { content: <Categories /> });
+        ReactLayout.render(App, { content: <CategoryListings /> });
     }
 });
 

@@ -1,4 +1,4 @@
-Categories = React.createClass({
+CategoryListings = React.createClass({
   render() {
     return (
       <div>
