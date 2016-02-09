@@ -30,7 +30,7 @@ Want to the run the project locally? Great!
 1. Clone the project locally.
 
   ```
-  git clone git@github.com:danieltapia/mercadera.git
+  git clone https://github.com/danieltapia/mercadera.git
   cd mercadera
   ```
 
@@ -48,17 +48,20 @@ Want to the run the project locally? Great!
     "twitterApiSecret": ""
   }
   ```
-3. Add data you want to seeds.js and run the seeds method to initially populate the database.
+
+3. Run the project.
+
+    ```
+    meteor run --settings server/settings.json
+    ```  
+
+4. Add data you want to seeds.js and run the seeds method to initially populate the database. Note: Meteor has to be running for meteor shell to work.
 
   ```
   $ meteor shell
   > Meteor.call("Database.seed")
   ```
 
-4. Run the project.
 
-  ```
-  meteor run --settings server/settings.json
-  ```
 
 If you're having trouble running the project, please open an issue. We want the project to be easy to run for newcomers.
