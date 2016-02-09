@@ -22,11 +22,11 @@ FlowRouter.route('/category', {
     }
 });
 
-// FlowRouter.route('/archivos', {
-//     action() {
-//         ReactLayout.render(App, { content: <Archives /> });
-//     }
-// });
+FlowRouter.route('/profile', {
+    action() {
+        ReactLayout.render(App, { content: <Profile /> });
+    }
+});
 
 // FlowRouter.route('/preferencias', {
 //     action() {
