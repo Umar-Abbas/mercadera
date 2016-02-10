@@ -18,7 +18,7 @@ Home = React.createClass({
         <div className="container-fluid">
 
           <div className="category-head text-center">
-            <h3>Materiales de Construcción</h3>
+            <h3>Todo</h3>
 
             <div className="filters subtle-text">
               Ordenados por 
@@ -29,6 +29,7 @@ Home = React.createClass({
               </select>
               en
               <select>
+                <option>Todo Bolivia</option>
                 <option>Santa Cruz</option>
                 <option>Cochabamba</option>
                 <option>Sucre</option>

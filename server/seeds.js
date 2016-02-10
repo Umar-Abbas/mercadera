@@ -2,10 +2,33 @@ Meteor.methods({
   'Database.seed': function() {
     // Create initial Category documents.
     var categories = [
-      'Bienes Raices',
-      'Automoviles',
-      'Electrodomesticos',
-      'Computadoras'
+      'Aeronáutica',
+      'Agropecuaria y Campo',
+      'Alimentos y Bebidas',
+      'Animales y Mascotas',
+      'Arte y Antigüedades',
+      'Autos y Vehículos',
+      'Bienes Raíces',
+      'Bolsa de Trabajo',
+      'Celulares y Accesorios',
+      'Computación y Juegos',
+      'Deportes y Fitness',
+      'Electrónicos',
+      'Entretenimiento y Ocio',
+      'Equipamiento Industrial',
+      'Hogar',
+      'Instrumentos Musicales',
+      'Inversiones y Negocios',
+      'Joyas y Relojes',
+      'Libros y Revistas',
+      'Maquinaria Pesada',
+      'Niños y Bebes',
+      'Otras Cosas',
+      'Restaurantes y Locales',
+      'Salud y Belleza',
+      'Servicios',
+      'Vestimenta y Moda',
+      'Viajes y Turismo'
     ];
     _.forEach(categories, function(c) {
       var category = new Category();
