@@ -1,7 +1,7 @@
 ListingCard = React.createClass({
   render() {
     return (
-      <div className="grid-item col-lg-2 col-md-3 col-xs-6">
+      <div className="grid-item col-lg-5ths col-md-3 col-xs-6">
         <div className="card">
           <a href="#">
             <div className="card-thumbnail">
