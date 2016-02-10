@@ -2,11 +2,7 @@ Home = React.createClass({
   componentDidMount: function() {
     $(this.refs.grid).isotope({
       itemSelector: '.grid-item',
-      layoutMode: 'masonry',
-      masonry: {
-        isFitWidth: true,
-        gutter: 16
-      },
+      layoutMode: 'masonry'
     });
 
     var self = this;
@@ -17,132 +13,46 @@ Home = React.createClass({
 
   render: function() {
     return (
-      <div className="container-fluid">
-        <div className="grid" ref="grid">
-          <div className="grid-item">
-            <div className="card">
-              <a href="#">
-                <div className="card-thumbnail">
-                  <img src="http://lorempixel.com/200/200/" alt="" className="img-responsive"/>
-                </div>
-              </a>
+      <div>
 
-              <div className="card-price text-center">$20,000</div>
+        <div className="container-fluid">
 
-              <div className="card-content">
-                <a href="#" className="title">Vendo Jordans 10 OVO nuevos</a>
-                <div className="location subtle-text"><i className="fa fa-map-marker"></i> Santa Cruz</div>
-              </div>
+          <div className="category-head text-center">
+            <h3>Materiales de Construcción</h3>
 
-              <a href="#" className="card-seller">
-                <div className="media">
-                  <div className="media-left">
-                    <img className="media-object" src="http://lorempixel.com/24/24" alt="..." />
-                  </div>
-                  <div className="media-body">
-                    <div className="username">Daniel T.</div>
-                  </div>
-                </div>
-              </a>
+            <div className="filters subtle-text">
+              Ordenados por 
+              <select>
+                <option>Nuevos</option>
+                <option>Precio Mayor</option>
+                <option>Precio Menor</option>
+              </select>
+              en
+              <select>
+                <option>Santa Cruz</option>
+                <option>Cochabamba</option>
+                <option>Sucre</option>
+              </select>
             </div>
           </div>
 
-          <div className="grid-item">
-            <div className="card">
-              <a href="#">
-                <div className="card-thumbnail">
-                  <img src="http://lorempixel.com/200/200/" alt="" className="img-responsive"/>
-                </div>
-              </a>
-
-              <div className="card-price text-center">$20,000</div>
-
-              <div className="card-content">
-                <a href="#" className="title">Vendo Jordans 10 OVO nuevos</a>
-                <div className="location subtle-text"><i className="fa fa-map-marker"></i> Santa Cruz</div>
-              </div>
-
-              <a href="#" className="card-seller">
-                <div className="media">
-                  <div className="media-left">
-                    <img className="media-object" src="http://lorempixel.com/24/24" alt="..." />
-                  </div>
-                  <div className="media-body">
-                    <div className="username">Daniel T.</div>
-                  </div>
-                </div>
-              </a>
-            </div>
+          <div className="row card-row grid" ref="grid">
+            <ListingCard cardThumbnail={"http://lorempixel.com/300/300"} price={"$9,999,999"} name={"PS4 500GB Nuevo"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x120"} price={"$4,000"} name={"Kia Optima 2007"} city={"La Paz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Oscar N."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x500"} price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x310"} price={"$250"} name={"PS4 500GB Nuevo"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x180"} price={"$4,000"} name={"Kia Optima 2007"} city={"La Paz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Oscar N."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x432"} price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$250"} name={"PS4 500GB Nuevo"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$4,000"} name={"Kia Optima 2007"} city={"La Paz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Oscar N."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$250"} name={"PS4 500GB Nuevo"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$4,000"} name={"Kia Optima 2007"} city={"La Paz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Oscar N."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$250"} name={"PS4 500GB Nuevo"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$4,000"} name={"Kia Optima 2007"} city={"La Paz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Oscar N."} />
+            <ListingCard cardThumbnail={"http://placehold.it/300x300"} price={"$24,000"} name={"Vendo casa grande!"} city={"Santa Cruz"} sellerAvatar={"http://lorempixel.com/30/30"} sellerName={"Daniel T."} />
           </div>
-
-          <div className="grid-item">
-            <div className="card">
-              <a href="#">
-                <div className="card-thumbnail">
-                  <img src="http://lorempixel.com/200/200/" alt="" className="img-responsive"/>
-                </div>
-              </a>
-
-              <div className="card-price text-center">$20,000</div>
-
-              <div className="card-content">
-                <a href="#" className="title">Vendo Jordans 10 OVO nuevos</a>
-                <div className="location subtle-text"><i className="fa fa-map-marker"></i> Santa Cruz</div>
-              </div>
-
-              <a href="#" className="card-seller">
-                <div className="media">
-                  <div className="media-left">
-                    <img className="media-object" src="http://lorempixel.com/24/24" alt="..." />
-                  </div>
-                  <div className="media-body">
-                    <div className="username">Daniel T.</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div className="grid-item">
-            <div className="card">
-              <a href="#">
-                <div className="card-thumbnail">
-                  <img src="http://lorempixel.com/200/200/" alt="" className="img-responsive"/>
-                </div>
-              </a>
-
-              <div className="card-price text-center">$20,000</div>
-
-              <div className="card-content">
-                <a href="#" className="title">Vendo Jordans 10 OVO nuevos</a>
-                <div className="location subtle-text"><i className="fa fa-map-marker"></i> Santa Cruz</div>
-              </div>
-
-              <a href="#" className="card-seller">
-                <div className="media">
-                  <div className="media-left">
-                    <img className="media-object" src="http://lorempixel.com/24/24" alt="..." />
-                  </div>
-                  <div className="media-body">
-                    <div className="username">Daniel T.</div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
-          <div className="grid-item"><div className="card"><div className="card-content">...</div></div></div>
         </div>
       </div>
     );

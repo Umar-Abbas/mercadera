@@ -1,42 +1,89 @@
+.category-head
+  margin: 0 0 20px
+
+  h3
+    font-weight: bold
+    margin: 5px 0 10px
+
+  .filters
+    font-size: 14px
+
+    select
+      -webkit-appearance: none
+      border: 1px solid #ccc
+      padding: 5px 20px 5px 10px
+      margin: 0 6px
+
+.head-row,
 .grid
   margin: 0 auto
 
+  [class*=col-]
+    padding: 0 6px
+
   .grid-item
     display: block
-    width: 195px
 
 .card
-  margin-bottom: 10px
+  margin-bottom: 16px
 
   a
     display: block
 
   .card-thumbnail
+    position: relative
+
+    .border1
+      width: 100%
+      height: 100%
+      border: 1px solid rgba(0,0,0,.1)
+      position: absolute
+      left: 0
+      top: 0
   
   .card-price
     color: #fff
     font-weight: bold
-    background: #62686c
-    padding: 5px 10px
+    background: #555
+    padding: 6px 10px
   
   .card-content,
   .card-seller
     background: #fff
     border: 1px solid #dedede
     border-top: 0
-    padding: 10px
+    padding: 10px 12px
 
     .title
-      color: #444
       line-height: 1.2
       font-weight: bold
       margin: 0 0 3px
 
+    .price
+      letter-spacing: 0.25px
+      font-weight: bold
+      margin: 0 0 3px
+
+  .card-seller
+    background: #f8f8f8
+    position: relative
+
     .media-body
       vertical-align: middle
+      line-height: 15px
 
       .username
-        color: #444
+        color: #4a4a4a
+        font-weight: 500
+
+    i.fa
+      color: #ccc
+      position: absolute
+      right: 10px
+      top: 19px
+
+    &:hover
+      text-decoration: none
 
 
 // --------------------------------------------------------
