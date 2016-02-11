@@ -1,4 +1,9 @@
 CreateListing = React.createClass({
+  getDefaultProps() {
+    return {
+      listing: new Listing()
+    }
+  },
 
   render: function() {
     return (
@@ -9,7 +14,7 @@ CreateListing = React.createClass({
               <div className="box">
                 <div className="box-heading text-uppercase text-center">Publica tu anuncio</div>
                 <div className="box-padding">
-                  <ListingForm />
+                  <ListingForm listing={this.props.listing} />
                 </div>
               </div>
             </div>

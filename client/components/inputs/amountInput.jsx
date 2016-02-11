@@ -7,7 +7,7 @@ AmountInput = React.createClass({
 
           <div className="input-group">
             <span className="input-group-addon">$</span>
-            <input type="text" className="form-control" name={this.props.name} placeholder={this.props.placeholder} />
+            <input defaultValue={this.props.defaultValue} type="text" className="form-control" name={this.props.name} placeholder={this.props.placeholder} />
             <span className="input-group-addon">.00</span>
           </div>
         </div>

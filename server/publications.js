@@ -13,6 +13,6 @@ Meteor.publish('categories.all', function(){
   return Categories.find({});
 });
 
-Meteor.publish('cities', function() {
-  return Cities.find();
+Meteor.publish('cities.all', function() {
+  return Cities.find({});
 });
