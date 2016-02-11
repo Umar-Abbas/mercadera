@@ -4,7 +4,6 @@ h2.category-title
 
 .filters-box
   padding: 10px
-  margin: 0 6px 20px !important
 
   .subtle-text
     font-size: 14px
@@ -24,29 +23,25 @@ h2.category-title
       line-height: 1.5
       padding: 2px 0
 
-.head-row,
 .grid
   margin: 0 auto
 
-  [class*=col-]
-    padding: 0 6px
-
-  .col-lg-5ths
-    position: relative
-
+.grid
+  margin: 0 auto
 
   .grid-item
     display: block
+    padding: 0 6px
 
 .filters-box
   .row
     margin: 0
 
     [class*=col-]
-      padding: 0 10px
+      padding: 0 5px
 
 .card
-  margin-bottom: 16px
+  margin-bottom: 10px
 
   a
     display: block
@@ -87,7 +82,6 @@ h2.category-title
 
   .card-seller
     background: #f8f8f8
-    position: relative
 
     .media-body
       vertical-align: middle
@@ -97,14 +91,12 @@ h2.category-title
         color: #4a4a4a
         font-weight: 500
 
-    i.fa
-      color: #ccc
-      position: absolute
-      right: 10px
-      top: 19px
-
     &:hover
       text-decoration: none
+
+@media (min-width: 768px)
+  .grid .grid-item
+    width: 207px
 
 @media (min-width: 992px)
   .filters-box .subtle-text

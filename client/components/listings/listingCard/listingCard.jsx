@@ -1,7 +1,7 @@
 ListingCard = React.createClass({
   render() {
     return (
-      <div className="grid-item col-lg-5ths col-md-3 col-xs-6">
+      <div className="grid-item col-xs-6">
         <div className="card">
           <a href="#">
             <div className="card-thumbnail">
@@ -26,8 +26,6 @@ ListingCard = React.createClass({
                 <div className="timestamp small-text subtle-text">hace 3 horas</div>
               </div>
             </div>
-
-            <i className="fa fa-chevron-right"></i>
           </a>
         </div>
       </div>

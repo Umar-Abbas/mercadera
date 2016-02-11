@@ -2,7 +2,10 @@ Home = React.createClass({
   componentDidMount: function() {
     $(this.refs.grid).isotope({
       itemSelector: '.grid-item',
-      layoutMode: 'masonry'
+      layoutMode: 'masonry',
+      masonry: {
+          isFitWidth: true
+        }
     });
 
     var self = this;

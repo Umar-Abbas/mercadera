@@ -16,6 +16,13 @@ FlowRouter.route('/anuncios/:automoviles', {
     }
 });
 
+FlowRouter.route('/listing', {
+    action() {
+        ReactLayout.render(App, { content: <Listing /> });
+    }
+});
+
+
 FlowRouter.route('/category', {
     action() {
         ReactLayout.render(App, { content: <CategoryListings /> });
@@ -27,9 +34,3 @@ FlowRouter.route('/profile', {
         ReactLayout.render(App, { content: <Profile /> });
     }
 });
-
-// FlowRouter.route('/preferencias', {
-//     action() {
-//         ReactLayout.render(App, { content: <Settings /> });
-//     }
-// });
