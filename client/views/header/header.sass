@@ -1,7 +1,8 @@
 #header,
 #mobile-header
   background: #fff
-  box-shadow: 0 1px 1px rgba(0,0,0,.1)
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.22)
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.22)
 
   .header-inner
     display: -webkit-flex
@@ -19,102 +20,92 @@
         outline: none
 
 #header
-    a.nav-btn,
-    a.icon-btn,
-    .dropdown
-      float: left
-      text-decoration: none
+  a.nav-btn,
+  a.icon-btn,
+  .dropdown
+    float: left
+    text-decoration: none
 
-    .nav-btn
-      display: block
-      color: #5f5e5b
-      line-height: 56px
-      border-left: 1px solid #ddddd5
-      padding: 0 20px
+    &:hover
+      cursor: pointer
 
-      &:hover
-        background: #f8f8f8
+  .nav-btn
+    display: block
+    color: #808080
+    font-size: 14px
+    line-height: 56px
+    border-left: 1px solid rgba(0,0,0,.15)
+    padding: 0 20px
 
+    &:hover
+      background: #f8f8f8
+
+  .icon-btn
+    color: #808080
+    padding: 16px 16px
+
+    &:hover
+      color: #505050
+      background: #f8f8f8
+
+  .header-left
+    .brand
+      font-weight: bold
+      border-left: 0
+
+    .browse-btn
+      border-left: 1px solid rgba(0,0,0,.15)
+      border-right: 1px solid rgba(0,0,0,.15)
+
+    .dropdown-menu
+      left: auto
+
+  .header-middle      
+    .search-bar-holder
+      position: relative
+
+      i.material-icons
+        color: #808080
+        line-height: 56px
+        position: absolute
+        left: 20px
+        top: 0px
+
+      .search-bar
+        height: 56px
+        font-size: 14px
+        padding: 10px 0 10px 54px
+
+  .header-right
     .icon-btn
-      color: #9da09b
-      padding: 16px 16px
-
-      &:hover
-        color: #5f5e5b
-        background: #f8f8f8
-
-    .header-left
-      .brand
-        font-weight: bold
-
-      .browse-btn
-        border-left: 1px solid #ddddd5
-        border-right: 1px solid #ddddd5
-
-      .dropdown-menu
-        left: auto
-
-    .header-middle      
-      .search-bar-holder
-        position: relative
-
-        .search-bar
-          height: 56px
-          padding: 10px 0 10px 45px
-
-    .header-right
-      .icon-btn
-        border-left: 1px solid #ddddd5
-
-      .notifications-menu
-        width: 400px
-        padding: 0
-
-        .dropdown-heading
-          color: #999
-          font-size: 13px
-          font-weight: bold
-          border-bottom: 1px solid #ddddd5
-          border-radius: 4px 4px 0 0
-          padding: 8px 10px
-
-        a
-          display: block
-          color: #464a4c
-          border-bottom: 1px solid #ddddd5
-
-          .media
-            padding: 12px 10px
-            margin: 0
-
-            .media-body
-              line-height: 16px
-
-          &:hover
-            text-decoration: none
-            background: #f5f5f5  
-
-        a:last-child
-          border-bottom: 0
-          border-radius: 0 0 4px 4px
+      border-left: 1px solid rgba(0,0,0,.15)
 
 
 #mobile-header
   a
     display: block
-    color: #9da09b
+    color: #808080
     text-align: center
     text-decoration: none
-    padding: 12px 15px
+    padding: 13px 15px
 
     &:hover
       background: #f8f8f8
   
   .sidebar-btn
-    border-right: 1px solid #ddddd5
+    border-right: 1px solid rgba(0,0,0,.15)
 
-  .search-bar
-    height: 48px
+  .header-middle
+    padding: 8px 10px
+
+    .search-bar
+      height: 34px
+      text-align: center
+      background: #eaeaea
+
+  .header-right a
+    float: left
+    border-left: 1px solid rgba(0,0,0,.15)
 
 #loginModal
   a

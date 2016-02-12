@@ -3,10 +3,10 @@ Header = React.createClass({
     return (
       <div className="navbar-fixed-top">
         <div className="color-stripe">
-          <div className="color-tag red"></div>
+          <div className="color-tag green"></div>
           <div className="color-tag blue"></div>
           <div className="color-tag yellow"></div>
-          <div className="color-tag green"></div>
+          <div className="color-tag red"></div>
         </div>
 
         <div className="visible-xs visible-sm">
@@ -19,7 +19,13 @@ Header = React.createClass({
               </div>
 
               <div className="header-middle">
-                <input type="text" className="search-bar text-center" placeholder="Busca en Mercadera"/>
+                <input type="text" className="search-bar" placeholder="Search Mercadera"/>
+              </div>
+
+              <div className="header-right">
+                <a className="icon-btn text-center">
+                  <i className="material-icons">add_a_photo</i>
+                </a>
               </div>
             </div>
           </div>
@@ -35,12 +41,15 @@ Header = React.createClass({
 
               <div className="header-middle">
                 <div className="search-bar-holder">
-                  <input type="text" className="search-bar" placeholder="Search for something..."/>
+                  <i className="material-icons">search</i>
+                  <input type="text" className="search-bar" placeholder="Search Mercadera"/>
                 </div>
               </div>
 
               <div className="header-right">
-                <NotificationsMenu />
+                <a className="icon-btn text-center">
+                  <i className="material-icons">notifications_none</i>
+                </a>
                 <UserHeaderArea />
               </div>
             </div>
