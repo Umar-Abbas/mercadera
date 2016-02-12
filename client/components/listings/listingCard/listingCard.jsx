@@ -1,7 +1,7 @@
 ListingCard = React.createClass({
   render() {
     return (
-      <div className="grid-item col-xs-6">
+      <div className="grid-item">
         <div className="card">
           <a href="#">
             <div className="card-thumbnail">
@@ -23,7 +23,6 @@ ListingCard = React.createClass({
               </div>
               <div className="media-body">
                 <div className="username">{this.props.sellerName}</div>
-                <div className="timestamp small-text subtle-text">hace 3 horas</div>
               </div>
             </div>
           </a>

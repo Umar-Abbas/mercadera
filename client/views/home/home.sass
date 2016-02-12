@@ -1,3 +1,17 @@
+.wrapper-flex
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+  .sidemenu
+    width: 195px
+
+  .grid-holder
+    -webkit-flex: 1
+    -ms-flex: 1
+    flex: 1
+
+
 h2.category-title
   font-weight: bold
   margin: 0 0 15px
@@ -23,15 +37,24 @@ h2.category-title
       line-height: 1.5
       padding: 2px 0
 
-.grid
-  margin: 0 auto
+.grid .grid-item
+  display: block
 
-.grid
+.desktop-grid 
   margin: 0 auto
-
+  
   .grid-item
-    display: block
-    padding: 0 6px
+    width: 195px
+    margin-bottom: 15px
+
+.mobile-grid 
+  margin-left: -5px
+  margin-right: -5px
+  
+  .grid-item
+    width: 50%
+    padding: 0 5px
+    margin-bottom: 10px
 
 .filters-box
   .row
@@ -41,8 +64,6 @@ h2.category-title
       padding: 0 5px
 
 .card
-  margin-bottom: 10px
-
   a
     display: block
 
@@ -95,8 +116,8 @@ h2.category-title
       text-decoration: none
 
 @media (min-width: 768px)
-  .grid .grid-item
-    width: 207px
+  .wrapper-flex .grid-holder
+    padding-left: 15px
 
 @media (min-width: 992px)
   .filters-box .subtle-text
